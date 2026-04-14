@@ -8,7 +8,6 @@ CORS(app)
 
 app.register_blueprint(cliente_bp, url_prefix="/api")
 
-# 👇 ESTO VA SIEMPRE AL FINAL
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
